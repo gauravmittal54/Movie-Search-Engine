@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc8c8;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header {
+    margin: 0;
+}
+
+.header, #Home {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Home {
+    margin-left: 20px;
+}
+
+#movie-details {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgb(82, 79, 80); /* Change background color to light pink */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.movie-poster img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.movie-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-misc-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.movie-misc-info li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.genre, .writer, .actors, .plot, .language, .awards {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.awards {
+    color: #007bff;
+}
+
+.awards i {
+    margin-right: 5px;
+}

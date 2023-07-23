@@ -18,11 +18,14 @@ Check out the live demo of the web app: [Movie Search Web App Demo](https://gaur
 
 # How to Use
 Clone this repository to your local machine using the following command:
+
 git clone https://github.com/your-username/movie-search-web-app.git
 
 # Navigate to the project directory:
 cd movie-search-web-app
+
 Open the index.html file in your web browser to access the Movie Search web app.
+
 
 # APIs Used
 [OMDb API][1]: The web app uses this API to fetch movie details and search results based on user input.

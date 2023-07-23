@@ -28,8 +28,7 @@ Open the index.html file in your web browser to access the Movie Search web app.
 
 
 # APIs Used
-[OMDb API][1]: The web app uses this API to fetch movie details and search results based on user input.
-[1]:https://www.omdbapi.com/ "OMDb API"
+[OMDb API](https://www.omdbapi.com/): The web app uses this API to fetch movie details and search results based on user input.
 
 # Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.

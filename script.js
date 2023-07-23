@@ -155,7 +155,7 @@ function displayResults(movies, searchTerm) {
         });
     }
 }
-
+let favorites = [];
 // Function to toggle favorite status and update favorites array
 function toggleFavorite() {
     const title = this.dataset.title;

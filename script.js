@@ -5,7 +5,7 @@ const searchList = document.getElementById('searchList');
 const favoritesHeading = document.getElementById('Favorites');
 
 const API_KEY = '788e9c72';
-const BASE_URL = 'http://www.omdbapi.com/';
+const BASE_URL = 'https://www.omdbapi.com/';
 
 // Use a variable to store the last search term
 let lastSearchTerm = '';

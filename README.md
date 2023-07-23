@@ -12,7 +12,7 @@ Add or remove movies to/from favorites
 View favorite movies in the favorites page
 
 # Live Demo
-Check out the live demo of the web app: Movie Search Web App Demo
+Check out the live demo of the web app: [Movie Search Web App Demo](https://gauravmittal54.github.io/Movie-Search-Engine/)
 
 # How to Use
 Clone this repository to your local machine using the following command:

@@ -4,6 +4,7 @@ const resultsDiv = document.getElementById('results');
 const searchList = document.getElementById('searchList');
 const favoritesHeading = document.getElementById('Favorites');
 
+
 const API_KEY = '788e9c72';
 const BASE_URL = 'https://www.omdbapi.com/';
 
@@ -69,6 +70,19 @@ function showMovieSuggestions(movies) {
 
         searchList.appendChild(suggestionItem);
     });
+
+        // Add the "Close Suggestions" option
+        const closeSuggestions = document.createElement('div');
+        closeSuggestions.classList.add('search-item', 'close-suggestions');
+        closeSuggestions.textContent = 'Close Suggestions';
+    
+        // Add click event listener to close the suggestions
+        closeSuggestions.addEventListener('click', function () {
+            searchList.style.display = 'none';
+        });
+    
+        searchList.appendChild(closeSuggestions);
+    
 
     // Add event listener to hide the search list when clicking outside
     document.addEventListener('click', function (event) {

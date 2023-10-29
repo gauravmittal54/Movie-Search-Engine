@@ -221,3 +221,27 @@ const storedFavorites = localStorage.getItem('favorites');
 if (storedFavorites) {
     favorites = JSON.parse(storedFavorites);
 }
+
+function loadDefaultSearchResults() {
+    // Set the default search term
+    const defaultSearchTerm = 'search';
+
+    // Fetch the default search results
+    const normalizedDefaultSearchTerm = normalizeSearchTerm(defaultSearchTerm);
+    const apiUrl = `${BASE_URL}?s=${encodeURIComponent(normalizedDefaultSearchTerm)}&page=1&apikey=${API_KEY}`;
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            if (data.Response === 'True' && data.Search) {
+                displayResults(data.Search, normalizedDefaultSearchTerm);
+                // Store the default search results in local storage
+                localStorage.setItem('searchResults', JSON.stringify(data.Search));
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching default search results:', error);
+        });
+}
+
+// Load default search results when the page loads
+window.addEventListener('load', loadDefaultSearchResults);
